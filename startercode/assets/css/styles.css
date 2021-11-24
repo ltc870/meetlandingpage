@@ -1,0 +1,457 @@
+/* ====================
+        Global
+==================== */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====================
+      Typography
+==================== */
+
+.header-title {
+  font-size: 2.5rem;
+}
+
+.header-text,
+.btn,
+.number,
+.info-subtitle,
+.info-text {
+  font-size: 1rem;
+}
+
+.info-title,
+.footer-title {
+  font-size: 2rem;
+}
+
+.footer-text {
+  font-size: 1.125rem;
+}
+
+.header-title,
+.btn,
+.btn-accent,
+.number,
+.info-subtitle,
+.info-title,
+.footer-title {
+  font-weight: 900;
+}
+
+.header-text,
+.info-text,
+.footer-text {
+  font-weight: 500;
+  line-height: 1.625em;
+}
+
+.header-text,
+.info-text {
+  color: #87879d;
+}
+
+.btn {
+  color: #ffffff;
+}
+
+.info-subtitle {
+  color: #4d96a9;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+/* ====================
+        Layout
+==================== */
+
+.logo {
+  display: block;
+  margin: 4em auto;
+}
+
+.hero-img {
+  display: none;
+}
+
+.big-hero-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.big-hero-img {
+  width: 110%;
+  margin-left: -1.3em;
+}
+
+.primary-section {
+  margin: 0 auto;
+  text-align: center;
+  width: 327px;
+}
+
+.container {
+  width: 80%;
+  max-width: 327px;
+  margin: 0 auto;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+
+.icon-line {
+  border-left: .5px solid #87879d;
+  padding: 3em;
+  align-self: center;
+  margin-left: 6em;
+}
+
+.icon-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: .5px solid #87879d;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.icon-number {
+  color: #87879d;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  margin: 0 auto 4em;
+}
+
+.grid-img {
+  width: 100%;
+  border-radius: 10px
+}
+
+.info-section {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info-subtitle {
+  text-align: center;
+}
+
+.info-text {
+  margin-bottom: 4em;
+}
+
+.icon-container-one {
+  margin-bottom: 5em;
+}
+
+.icon-border {
+  z-index: 10;
+  background-color: #ffffff;
+}
+
+.footer {
+  background-image: url("../../assets/mobile/image-footer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 5em;
+  position: relative;
+  z-index: 0;
+  margin-top: -4.8em;
+}
+
+.overlay {
+  background-color: #4d96a9;
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  right: 0;
+  padding: 14.10em;
+  opacity: .9;
+}
+
+.footer-section {
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-title {
+  text-align: center;
+  padding-top: 2.5em;
+}
+
+.footer-text {
+  margin-bottom: 2em;
+}
+
+/* ====================
+        buttons
+==================== */
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+}
+
+.big-btn {
+  padding: 1em 2em;
+}
+
+.primary-btn {
+  background-color: #4d96a9;
+  margin-bottom: 1em;
+}
+
+.primary-accent {
+  color: #8fe3f9;
+}
+
+.primary-btn:hover,
+.primary-btn:focus {
+  background-color: #71c0d4;
+}
+
+.secondary-btn {
+  background-color: #855fb1;
+  padding: 1em 2em;
+  margin-bottom: 8em;
+}
+
+.secondary-btn:hover,
+.secondary-btn:focus {
+  background-color: #b18bdd;
+}
+
+.footer-btn {
+  background-color: #855fb1;
+}
+
+.footer-accent {
+  color: #d9b8ff;
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: #b18bdd;
+}
+
+@media (min-width: 768px) {
+  .hero-img {
+    display: none;
+  }
+
+  .header-title {
+    font-size: 3rem;
+    width: 339px;
+    margin: 0 auto;
+  }
+
+  .footer-title {
+    font-size: 2.5rem;
+  }
+
+  .big-hero-img {
+    object-fit: cover;
+    width: 107%;
+    margin-left: -1.5em;
+    margin-bottom: 4em;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 768px;
+  }
+
+  .primary-section {
+    width: 457px;
+  }
+
+  .header-text {
+    margin-bottom: 2.5em;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    display: inline-block;
+  }
+
+  .secondary-btn {
+    margin-left: .75em;
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .info-section {
+    width: 573px;
+    margin: 0 auto;
+  }
+
+  .info-title {
+    font-size: 2.5rem;
+    width: 445px;
+    margin: 0 auto;
+  }
+
+  .footer {
+    background-image: url("../../assets/desktop/image-footer.jpg");
+    padding-bottom: 6.55em;
+    background-size: cover;
+    background-position-x: -80px;
+  }
+
+  .footer-title {
+    width: 457px;
+    margin: 0 auto;
+    padding-top: 2.5em;
+    margin-bottom: 1em;
+  }
+
+  .footer-text {
+    margin-bottom: 3em;
+  }
+
+  .overlay {
+    padding: 16.2em;
+    padding-right: 35em;
+  }
+
+  @media (min-width: 1000px) {
+    .header-title {
+      font-size: 4rem;
+    }
+
+    .header-text,
+    .info-text,
+    .footer-text {
+      font-size: 1.125rem;
+    }
+
+    .info-title,
+    .footer-title {
+      font-size: 2.5rem;
+    }
+
+    .hero-img {
+      display: initial;
+    }
+
+    .big-hero-container,
+    .big-hero-img {
+      display: none;
+    }
+
+    .header-flex {
+      display: flex;
+      width: 100%;
+      align-items: flex-start;
+      overflow: hidden;
+    }
+
+    .primary-section {
+      width: 40%;
+      align-self: flex-start;
+      margin-top: 1.5em;
+    }
+
+    .header-title {
+      margin: 0 auto;
+      width: 445px;
+    }
+
+    .hero-img {
+      object-fit: contain;
+      width: 27.5%;
+    }
+
+    .hero-img-left {
+      margin-top: 0em;
+      margin-left: -2em;
+    }
+
+    .hero-img-right {
+      margin-top: 3em;
+      margin-right: -2em;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 1440px;
+    }
+
+    .grid {
+      width: 100%;
+      gap: 20px;
+      margin-bottom: 7em;
+    }
+
+    .footer {
+      background-image: url("../../assets/desktop/image-footer.jpg");
+      background-size: cover;
+      padding: 3.25em;
+      width: 100%;
+    }
+
+    .footer-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .footer-title,
+    .footer-text {
+      text-align: left;
+    }
+
+    .footer-title {
+      width: 350px;
+    }
+
+    .footer-text {
+      width: 350px;
+      align-self: flex-end;
+    }
+
+    .footer-btn {
+      margin-top: 2em;
+    }
+
+    .overlay {
+      padding: 11em;
+      padding-left: 100%;
+    }
+  }
+
+}
