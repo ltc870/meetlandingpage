@@ -175,7 +175,8 @@ body {
 
 .footer {
   background-image: url("../../assets/mobile/image-footer.jpg");
-  background-color: #4d96a9;
+  background-color: hsla(192, 37%, 48%, 1);
+  background-blend-mode: overlay;
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 5em;
