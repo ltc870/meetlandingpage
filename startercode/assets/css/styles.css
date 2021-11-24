@@ -327,10 +327,10 @@ body {
   }
 
   .footer {
-    background-image: url("../../assets/desktop/image-footer.jpg");
+    background-image: url("../../assets/tablet/image-footer.jpg");
     padding-bottom: 6.55em;
     background-size: cover;
-    background-position-x: -80px;
+    background-position-x: -60px;
   }
 
   .footer-title {
