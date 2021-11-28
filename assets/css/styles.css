@@ -174,9 +174,10 @@ body {
 }
 
 .footer {
-  background-image: url("../../assets/mobile/image-footer.jpg");
-  background-color: hsla(192, 37%, 48%, 1);
-  background-blend-mode: overlay;
+  /* background-image: url("../../assets/mobile/image-footer.jpg"); */
+  /* background-color: hsla(192, 37%, 48%, 1); */
+  background: linear-gradient( hsla(192, 37%,48%, 0.9), hsla(192, 37%,48%, 0.9) ), url("../../assets/mobile/image-footer.jpg");
+  /* background-blend-mode: overlay; */
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 5em;
@@ -327,7 +328,8 @@ body {
   }
 
   .footer {
-    background-image: url("../../assets/tablet/image-footer.jpg");
+    background: linear-gradient( hsla(192, 37%,48%, 0.9), hsla(192, 37%,48%, 0.9) ), url("../../assets/tablet/image-footer.jpg");
+    /* background-image: url("../../assets/tablet/image-footer.jpg"); */
     padding-bottom: 6.55em;
     background-size: cover;
     background-repeat: no-repeat;
@@ -421,7 +423,8 @@ body {
     }
 
     .footer {
-      background-image: url("../../assets/desktop/image-footer.jpg");
+      background: linear-gradient( hsla(192, 37%,48%, 0.9), hsla(192, 37%,48%, 0.9) ), url("../../assets/desktop/image-footer.jpg");
+      /* background-image: url("../../assets/desktop/image-footer.jpg"); */
       background-size: cover;
       background-repeat: no-repeat;
       padding: 3.25em;
